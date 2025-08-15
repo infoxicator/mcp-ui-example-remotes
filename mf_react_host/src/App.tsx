@@ -19,32 +19,33 @@ const registerRemote = (name: string, entry: string) => {
   mf.registerRemotes([{ name, alias: name, entry }]);
 };
 
-import { init } from '@module-federation/enhanced/runtime';
+// import { init } from '@module-federation/enhanced/runtime';
 
-init({
-  name: 'mf_react_host',
-  remotes: [
-    {
-      name: "mfe1",
-      entry: "http://localhost:4201/remoteEntry.js",
-    }
-  ],
-});
+// init({
+//   name: 'mf_react_host',
+//   remotes: [
+//     {
+//       name: "mfe1",
+//       entry: "http://localhost:4201/remoteEntry.js",
+//     }
+//   ],
+// });
 
 
 
 const App = () => {
 
-  const remoteName = 'mfe1/Component';
+  const remoteName = 'mfe1';
   const remoteEntry = 'http://localhost:4201/remoteEntry.js';
+  const remoteAlias = 'mfe1/Component';
 
   const ref = useRef(null);
 
   useEffect(() => {
-    // if (remoteName && remoteEntry) {
-    //   registerRemote(remoteName, remoteEntry);
-    // }
-    loadRemote(remoteName).then((remote) => {
+    if (remoteName && remoteEntry) {
+      registerRemote(remoteName, remoteEntry);
+    }
+    getMFInstance().loadRemote(remoteAlias).then((remote) => {
       console.log('remote', remote);
       // @ts-ignore
       remote.default(ref.current);
