@@ -45,4 +45,3 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           working-directory: ${{ matrix.folder }}
-          prod: ${{ github.ref == 'refs/heads/main' }}
