@@ -9,4 +9,5 @@ export default createModuleFederationConfig({
     react: { singleton: true },
     'react-dom': { singleton: true },
   },
+  getPublicPath: `function() {return "https://mcp-ui-example-remotes.vercel.app/mf_react/"}`,
 });

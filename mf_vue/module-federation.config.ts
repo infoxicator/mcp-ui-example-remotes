@@ -8,4 +8,5 @@ export default createModuleFederationConfig({
   shared: {
     vue: { singleton: true },
   },
+  getPublicPath: `function() {return "https://mcp-ui-example-remotes.vercel.app/mf_vue/"}`,
 });

@@ -6,4 +6,5 @@ export default createModuleFederationConfig({
   exposes: {
     '.': './src/solidRenderer.tsx',
   },
+  getPublicPath: `function() {return "https://mcp-ui-example-remotes.vercel.app/mf_solid/"}`,
 });
