@@ -15,11 +15,11 @@ jobs:
       matrix:
         folder:
           - angular/nx-rspack-mf-demo
-          - mf_host
+          - mf_react_host
           - mf_solid
           - mf_svelte
           - mf_vue
-          - remote_test
+          - mf_react
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
