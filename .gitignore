@@ -53,10 +53,6 @@ pnpm-debug.log*
 # Next.js
 .next/
 
-# React
-*.jsx
-*.tsx
-
 # Temporary files
 *.tmp
 *.temp

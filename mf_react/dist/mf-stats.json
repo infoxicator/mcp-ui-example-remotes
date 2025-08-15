@@ -1,15 +1,15 @@
 {
-  "id": "remote_test",
-  "name": "remote_test",
+  "id": "mf_react",
+  "name": "mf_react",
   "metaData": {
-    "name": "remote_test",
+    "name": "mf_react",
     "type": "app",
     "buildInfo": {
       "buildVersion": "1.0.0",
-      "buildName": "remote_test"
+      "buildName": "mf_react"
     },
     "remoteEntry": {
-      "name": "static/js/remote_test.7f88efc6.js",
+      "name": "static/js/mf_react.982cd68f.js",
       "path": "",
       "type": "global"
     },
@@ -19,7 +19,7 @@
       "zip": "@mf-types.zip",
       "api": "@mf-types.d.ts"
     },
-    "globalName": "remote_test",
+    "globalName": "mf_react",
     "pluginVersion": "0.18.0",
     "prefetchInterface": false,
     "publicPath": "/"
@@ -32,12 +32,12 @@
       "name": "react-dom",
       "version": "18.3.1",
       "eager": false,
-      "id": "remote_test:react-dom",
+      "id": "mf_react:react-dom",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/987.4110819d.js"
+            "static/js/async/987.2ffb06ca.js"
           ]
         },
         "css": {
@@ -54,12 +54,12 @@
       "name": "react",
       "version": "18.3.1",
       "eager": false,
-      "id": "remote_test:react",
+      "id": "mf_react:react",
       "assets": {
         "js": {
           "async": [],
           "sync": [
-            "static/js/async/512.5c09766f.js"
+            "static/js/async/512.455d6854.js"
           ]
         },
         "css": {
@@ -76,7 +76,7 @@
   "exposes": [
     {
       "path": ".",
-      "id": "remote_test:.",
+      "id": "mf_react:.",
       "name": ".",
       "requires": [
         "react"
@@ -85,13 +85,13 @@
       "assets": {
         "js": {
           "sync": [
-            "static/js/async/__federation_expose_default_export.e0aeff3b.js"
+            "static/js/async/__federation_expose_default_export.14b7209a.js"
           ],
           "async": []
         },
         "css": {
           "sync": [
-            "static/css/async/__federation_expose_default_export.4f1887cc.css"
+            "static/css/async/__federation_expose_default_export.26b0fc84.css"
           ],
           "async": []
         }
