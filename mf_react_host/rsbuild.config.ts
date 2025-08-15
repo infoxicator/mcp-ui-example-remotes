@@ -5,4 +5,7 @@ import moduleFederationConfig from './module-federation.config';
 
 export default defineConfig({
   plugins: [pluginReact(), pluginModuleFederation(moduleFederationConfig)],
+  output: {
+    assetPrefix: 'https://mcp-ui-example-remotes.vercel.app/mf_react_host/',
+  },
 });

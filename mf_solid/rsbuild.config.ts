@@ -15,4 +15,7 @@ export default defineConfig({
   server: {
     port: 3004,
   },
+  output: {
+    assetPrefix: 'https://mcp-ui-example-remotes.vercel.app/mf_solid/',
+  },
 });

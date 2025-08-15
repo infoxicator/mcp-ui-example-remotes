@@ -8,4 +8,7 @@ export default defineConfig({
   server: {
     port: 3001,
   },
+  output: {
+    assetPrefix: 'https://mcp-ui-example-remotes.vercel.app/mf_vue/',
+  },
 });
