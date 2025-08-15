@@ -37,7 +37,7 @@ jobs:
       - name: Build project
         run: |
           cd ${{ matrix.folder }}
-          npm run build || nx build || rsbuild build
+          npm run build
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
