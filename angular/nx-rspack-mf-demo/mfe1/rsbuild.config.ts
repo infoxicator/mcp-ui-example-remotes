@@ -21,7 +21,10 @@ export default createConfig({
           singleton: true,
           strictVersion: true,
         })
-      }
+      },
     }
+  },
+  output: {
+    assetPrefix: 'https://mcp-ui-example-remotes.vercel.app/mfe1/',
   }
 });

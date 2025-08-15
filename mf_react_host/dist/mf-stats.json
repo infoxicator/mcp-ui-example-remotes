@@ -22,7 +22,7 @@
     "globalName": "mf_react_host",
     "pluginVersion": "0.18.0",
     "prefetchInterface": false,
-    "publicPath": "/"
+    "publicPath": "https://mcp-ui-example-remotes.vercel.app/mf_react_host/"
   },
   "shared": [
     {

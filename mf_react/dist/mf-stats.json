@@ -9,7 +9,7 @@
       "buildName": "mf_react"
     },
     "remoteEntry": {
-      "name": "static/js/mf_react.982cd68f.js",
+      "name": "static/js/mf_react.1a9e656a.js",
       "path": "",
       "type": "global"
     },
@@ -22,7 +22,7 @@
     "globalName": "mf_react",
     "pluginVersion": "0.18.0",
     "prefetchInterface": false,
-    "publicPath": "/"
+    "getPublicPath": "function() {return \"https://mcp-ui-example-remotes.vercel.app/mf_react/\"}"
   },
   "shared": [
     {
