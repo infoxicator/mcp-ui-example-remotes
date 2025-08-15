@@ -25,6 +25,6 @@ export default createConfig({
     }
   },
   output: {
-    assetPrefix: 'https://mcp-ui-example-remotes.vercel.app/mfe1/',
+    assetPrefix: 'https://mcp-ui-example-remotes.vercel.app/angular_mfe1/',
   }
 });
