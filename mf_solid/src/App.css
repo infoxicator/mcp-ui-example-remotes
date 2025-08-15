@@ -1,0 +1,199 @@
+/* body {
+  margin: 0;
+  color: #333;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  background: linear-gradient(45deg, #e3f2fd, #bbdefb, #90caf9, #64b5f6);
+  background-size: 400% 400%;
+  animation: gradientFlow 6s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+} */
+
+.solid_card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 16px;
+  border: 1px solid rgba(118, 169, 250, 0.3);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.solid_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.15);
+  border-color: rgba(118, 169, 250, 0.6);
+  height: 600px; /* Fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+}
+
+.solid_card-header {
+  padding: 25px;
+  background: rgba(219, 234, 254, 0.8);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.solid_main-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.solid_main-logo {
+  height: 120px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.solid_main-logo:hover {
+  transform: scale(1.1);
+}
+
+.solid_logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.solid_logo-image {
+  height: 45px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.solid_federation-logo {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(20%) saturate(3578%) hue-rotate(202deg) brightness(99%) contrast(101%);
+}
+
+.solid_mcpui-logo-img {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(20%) saturate(3578%) hue-rotate(202deg) brightness(99%) contrast(101%);
+}
+
+.solid_logo-section:hover .solid_logo-image {
+  transform: scale(1.1);
+}
+
+.solid_handshake-emoji {
+  font-size: 2.2rem;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+  animation: solid_handshakeWave 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes solid_handshakeWave {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+  75% {
+    transform: rotate(15deg) scale(1.1);
+  }
+}
+
+.solid_card-body {
+  padding: 30px 25px;
+  text-align: center;
+}
+
+.solid_card-title {
+  font-size: 2rem;
+  color: #3b82f6;
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  text-shadow: none;
+  line-height: 1.2;
+}
+
+.solid_card-description {
+  color: rgba(51, 51, 51, 0.8);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  text-shadow: none;
+}
+
+.solid_card-footer {
+  padding: 25px;
+  background: rgba(219, 234, 254, 0.8);
+  border-top: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.solid_tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.solid_tech-badge {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.solid_tech-badge:hover {
+  background: rgba(59, 130, 246, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .solid_card {
+    margin: 10px;
+    max-width: 350px;
+  }
+  
+  .solid_card-title {
+    font-size: 1.8rem;
+  }
+  
+  .solid_main-logo {
+    height: 100px;
+  }
+  
+  .solid_logo-section {
+    gap: 12px;
+  }
+  
+  .solid_logo-image {
+    height: 20px;
+  }
+  
+  .solid_handshake-emoji {
+    font-size: 2rem;
+  }
+}

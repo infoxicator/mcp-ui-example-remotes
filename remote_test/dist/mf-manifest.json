@@ -1,0 +1,89 @@
+{
+  "id": "remote_test",
+  "name": "remote_test",
+  "metaData": {
+    "name": "remote_test",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "remote_test"
+    },
+    "remoteEntry": {
+      "name": "static/js/remote_test.7f88efc6.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "remote_test",
+    "pluginVersion": "0.18.0",
+    "prefetchInterface": false,
+    "publicPath": "/"
+  },
+  "shared": [
+    {
+      "id": "remote_test:react-dom",
+      "name": "react-dom",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/987.4110819d.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    },
+    {
+      "id": "remote_test:react",
+      "name": "react",
+      "version": "18.3.1",
+      "singleton": true,
+      "requiredVersion": "^18.3.1",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/512.5c09766f.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "remote_test:.",
+      "name": ".",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_default_export.e0aeff3b.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "static/css/async/__federation_expose_default_export.4f1887cc.css"
+          ],
+          "async": []
+        }
+      },
+      "path": "."
+    }
+  ]
+}

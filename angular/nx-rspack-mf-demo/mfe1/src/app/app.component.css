@@ -1,0 +1,195 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
+    background-size: 400% 400%;
+    animation: gradientFlow 6s ease infinite;
+    padding: 20px;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, rgba(221, 68, 68, 0.95), rgba(192, 38, 211, 0.95));
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1px solid rgba(221, 68, 68, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+    border-color: rgba(192, 38, 211, 0.5);
+  }
+  
+  .card-header {
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(200, 60, 60, 0.9), rgba(170, 30, 180, 0.9));
+    border-bottom: 1px solid rgba(221, 68, 68, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo-section-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-section-top .logo-image {
+    height: 120px;
+    width: auto;
+    transition: all 0.3s ease;
+  }
+
+  .logo-section-top .logo-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .logo-image {
+    height: 45px;
+    width: auto;
+    transition: all 0.3s ease;
+  }
+  
+  .federation-logo {
+    filter: brightness(0) invert(1);
+  }
+  
+  .mcpui-logo-img {
+    filter: brightness(0) invert(1);
+  }
+  
+  .logo-section:hover .logo-image {
+    transform: scale(1.1);
+  }
+  
+  .handshake-emoji {
+    font-size: 2.2rem;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+    animation: handshakeWave 2s ease-in-out infinite;
+    display: inline-block;
+  }
+  
+  @keyframes handshakeWave {
+    0%, 100% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(-15deg) scale(1.1);
+    }
+    75% {
+      transform: rotate(15deg) scale(1.1);
+    }
+  }
+  
+  .card-body {
+    padding: 30px 25px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    background: linear-gradient(45deg, #0e0606, #c026d3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .card-description {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-footer {
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(200, 60, 60, 0.9), rgba(170, 30, 180, 0.9));
+    border-top: 1px solid rgba(221, 68, 68, 0.2);
+  }
+  
+  .tech-stack {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .tech-badge {
+    background: linear-gradient(45deg, rgba(221, 68, 68, 0.1), rgba(192, 38, 211, 0.1));
+    color: #1a1a1a;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid rgba(221, 68, 68, 0.3);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+  
+  .tech-badge:hover {
+    background: linear-gradient(45deg, rgba(221, 68, 68, 0.2), rgba(192, 38, 211, 0.2));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(221, 68, 68, 0.3);
+    border-color: rgba(221, 68, 68, 0.5);
+  }
+  
+  @keyframes gradientFlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .card {
+      margin: 10px;
+      max-width: 350px;
+    }
+    
+    .card-title {
+      font-size: 1.8rem;
+    }
+
+    .logo-section-top .logo-image {
+      height: 100px;
+    }
+    
+    .logo-section {
+      gap: 12px;
+    }
+    
+    .logo-image {
+      height: 40px;
+    }
+    
+    .handshake-emoji {
+      font-size: 2rem;
+    }
+  }

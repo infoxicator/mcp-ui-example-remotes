@@ -1,0 +1,70 @@
+{
+  "id": "mf_vue",
+  "name": "mf_vue",
+  "metaData": {
+    "name": "mf_vue",
+    "type": "app",
+    "buildInfo": {
+      "buildVersion": "1.0.0",
+      "buildName": "mf_vue"
+    },
+    "remoteEntry": {
+      "name": "static/js/mf_vue.eae24b78.js",
+      "path": "",
+      "type": "global"
+    },
+    "types": {
+      "path": "",
+      "name": "",
+      "zip": "@mf-types.zip",
+      "api": "@mf-types.d.ts"
+    },
+    "globalName": "mf_vue",
+    "pluginVersion": "0.18.0",
+    "prefetchInterface": false,
+    "publicPath": "/"
+  },
+  "shared": [
+    {
+      "id": "mf_vue:vue",
+      "name": "vue",
+      "version": "3.5.18",
+      "singleton": true,
+      "requiredVersion": "^3.5.18",
+      "assets": {
+        "js": {
+          "async": [],
+          "sync": [
+            "static/js/async/lib-vue.a4c4861b.js"
+          ]
+        },
+        "css": {
+          "async": [],
+          "sync": []
+        }
+      }
+    }
+  ],
+  "remotes": [],
+  "exposes": [
+    {
+      "id": "mf_vue:.",
+      "name": ".",
+      "assets": {
+        "js": {
+          "sync": [
+            "static/js/async/__federation_expose_default_export.c383178c.js"
+          ],
+          "async": []
+        },
+        "css": {
+          "sync": [
+            "static/css/async/__federation_expose_default_export.57854763.css"
+          ],
+          "async": []
+        }
+      },
+      "path": "."
+    }
+  ]
+}
