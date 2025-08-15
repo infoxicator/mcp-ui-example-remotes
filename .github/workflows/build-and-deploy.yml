@@ -15,7 +15,6 @@ jobs:
     strategy:
       matrix:
         folder:
-          - angular/nx-rspack-mf-demo
           - mf_react_host
           - mf_solid
           - mf_svelte
