@@ -1,0 +1,69 @@
+# Node
+node_modules/
+
+# Build
+/dist/
+/build/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Test
+coverage/
+
+# Env
+.env
+.env.*
+
+# Others
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# Mac
+__MACOSX/
+
+# Git
+.git/
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Svelte
+.svelte-kit/
+
+# Angular
+.angular/
+
+# Solid
+.solid/
+
+# Next.js
+.next/
+
+# React
+*.jsx
+*.tsx
+
+# Temporary files
+*.tmp
+*.temp
+
+# Output
+out/
+# Nx
+nx-out/
+cache/
+.nx/
