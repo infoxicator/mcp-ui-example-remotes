@@ -63,3 +63,4 @@ out/
 nx-out/
 cache/
 .nx/
+.vercel
