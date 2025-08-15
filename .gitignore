@@ -64,3 +64,4 @@ nx-out/
 cache/
 .nx/
 .vercel
+all-dist/

@@ -9,7 +9,7 @@
       "buildName": "mf_vue"
     },
     "remoteEntry": {
-      "name": "static/js/mf_vue.eae24b78.js",
+      "name": "static/js/mf_vue.6b15666d.js",
       "path": "",
       "type": "global"
     },
@@ -53,13 +53,13 @@
       "assets": {
         "js": {
           "sync": [
-            "static/js/async/__federation_expose_default_export.c383178c.js"
+            "static/js/async/__federation_expose_default_export.f4625590.js"
           ],
           "async": []
         },
         "css": {
           "sync": [
-            "static/css/async/__federation_expose_default_export.57854763.css"
+            "static/css/async/__federation_expose_default_export.f5529a58.css"
           ],
           "async": []
         }

@@ -12,14 +12,6 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     environment: production
-    strategy:
-      matrix:
-        folder:
-          - mf_react_host
-          - mf_solid
-          - mf_svelte
-          - mf_vue
-          - mf_react
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,15 +21,13 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
+      - name: Install dependencies (root)
         run: |
-          cd ${{ matrix.folder }}
           npm ci || npm install
 
-      - name: Build project
+      - name: Build all projects
         run: |
-          cd ${{ matrix.folder }}
-          npm run build
+          node build-all.js
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
@@ -45,4 +35,4 @@ jobs:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          working-directory: ${{ matrix.folder }}
+          working-directory: all-dist
